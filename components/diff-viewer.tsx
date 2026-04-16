@@ -91,14 +91,14 @@ function DiffBlock({ change }: { change: Change }) {
   const bgColor = change.added
     ? 'bg-green-500/20'
     : change.removed
-    ? 'bg-red-500/20'
-    : ''
+      ? 'bg-red-500/20'
+      : ''
 
   const textColor = change.added
     ? 'text-green-400'
     : change.removed
-    ? 'text-red-400'
-    : 'text-slate-300'
+      ? 'text-red-400'
+      : 'text-slate-300'
 
   const prefix = change.added ? '+' : change.removed ? '-' : ' '
 

@@ -66,7 +66,7 @@ export function SnippetDetailPanel({
     } else if (activeTab === 'diff') {
       setActiveTab('history')
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedVersions[0]?.id, selectedVersions[1]?.id])
 
   const { data: versionsData } = useSWR<{ versions: SnippetVersion[] }>(
